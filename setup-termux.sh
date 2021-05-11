@@ -1,4 +1,4 @@
-!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 #just a simple script for setup my termux settings
 
 echo "Setting up storage by giving storage permission"
