@@ -8,9 +8,9 @@ then
     termux-setup-storage
 fi
 mkdir ~/.termux 2>/dev/null
-if [[ -r ~/Set-up-my-termux/termux.properties ]]
+if [[ -r termux.properties ]]
 then
-    cp ~/Set-up-my-termux/termux.properties ~/.termux/termux.properties
+    cp termux.properties ~/.termux/termux.properties
     termux-reload-settings
 else
     echo "can't find properties file"
@@ -29,7 +29,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 echo "fpath=(~/.zsh/zsh-completions/src $fpath)" > ~/.zshrc
 
 #copy zshrc to .zshrc file
-cat ~/.zsh/zshrc >> ~/.zshrc
+cat zshrc >> ~/.zshrc
 
 #zsh-autosuggestions
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
