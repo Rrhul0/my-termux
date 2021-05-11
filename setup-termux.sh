@@ -42,7 +42,8 @@ echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.z
 
 #changing shell for user
 chsh -s zsh
-
+touch ~/.zsh/aliasrc
+touch ~/.zsh/history
 echo "All Done"
 exit 0
 
